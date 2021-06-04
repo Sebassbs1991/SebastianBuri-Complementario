@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SebastianBuriComplementario.RegistrarDatos">
+    <ContentPage.Content>
+        <Grid>
+
+            <BoxView Color="blue" Opacity="0.1"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="logo.png"  Margin=" 0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    
+
+                    <Label x:Name="lblUser"  TextColor="Black" />
+
+                    <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre" PlaceholderColor="Black" Opacity="0.3"/>
+                    <Entry x:Name="txtMonto" Placeholder="Ingrese monto inicial" PlaceholderColor="Black" Opacity="0.3"/>
+
+
+                    <Entry Text="Pago Mensual"  x:Name="txtTotal" IsEnabled="False"/>
+
+                    <Button x:Name="btnCalcular" Text="Calcular" BackgroundColor="Black" BorderRadius="20" TextColor="White" Margin=" 0,70,0,30"
+                            Clicked="btnCalcular_Clicked"/>
+
+                    <Button x:Name="btnGuardar" Text="Guardar" BackgroundColor="Black" BorderRadius="20" TextColor="White" Margin=" 0,70,0,30"
+                            Clicked="btnGuardar_Clicked"/>
+
+
+
+                </StackLayout>
+
+
+
+
+            </Grid>
+
+
+
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

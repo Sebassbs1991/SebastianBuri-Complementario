@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SebastianBuriComplementario.Login">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <BoxView Color="blue" Opacity="0.1"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="logo.png"  Margin=" 0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+
+                    <Entry x:Name="txtUser" Placeholder="Ingrese Usuario" PlaceholderColor="Black" Opacity="0.3"/>
+                    <Entry x:Name= "txtPass" Placeholder="Ingrese Password" PlaceholderColor="Black" Opacity="0.3" IsPassword="True"/>
+
+                    <Button x:Name="btnIngresar" Text="Ingresar" BackgroundColor="Black" BorderRadius="20" TextColor="White" Margin=" 0,70,0,30"
+                            Clicked="btnIngresar_Clicked"/>
+
+                    <Button x:Name="btnRegistrar" Text="Registrar" BackgroundColor="Black" BorderRadius="20" TextColor="White" Margin=" 0,70,0,30"
+                            Clicked="btnRegistrar_Clicked"/>
+
+
+                </StackLayout>
+
+
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
